@@ -1,0 +1,151 @@
+header {
+    font-family: 'Poppins';
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 15px;
+    max-width: 1440px;
+    margin:  0 auto;
+}
+
+.cabecalho .logo {
+    width: 65px;
+    padding: 10px;
+    height: 100%;
+    margin: 10px;
+}
+
+.cabecalho nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    height: 100%;
+}
+
+.cabecalho nav .menu :hover{
+    background: rgb(172, 9, 9);
+    border-radius: 15px;
+    padding: 7px;
+    transition: 0.2s;
+}
+
+.cabecalho nav .menu a{
+    color: rgb(255, 255, 255);
+}  
+
+main {
+    font-size: 15px;
+    font-family: 'Poppins';
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: calc( 100vh - 65px); 
+}
+
+.container .titulo-vingadores {
+    max-width: 550px;  
+}
+
+.container .vingadores-unidos{
+    width: 450px;
+}
+
+.container .sinopse {
+    max-width: 750px;
+    color: white;
+}
+
+.container .botao-trailer{
+    background-color: rgb(172, 9, 9);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 15px;
+    margin: 15px 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+
+.container div .botao-trailer:hover {
+    transform: scale(1.2);
+    }
+
+.fundo-video{
+        position: absolute;
+        z-index: -1;
+        height: 100vh;
+       width: 100vw;
+       overflow: hidden;
+    }
+
+.fundo-video .video {
+    width: 100vw; 
+}
+
+.fundo-video::after {
+    content: " ";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7651435574229692) 50%, rgba(0,0,0,1) 100%);
+}
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.conteudo-modal{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fechar-modal {
+    cursor: pointer;
+    background-color: rgb(172, 9, 9);
+    color: white;
+    width: 30px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.modal iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    visibility: visible;
+}
