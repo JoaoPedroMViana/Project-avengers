@@ -9,11 +9,12 @@ header {
     height: 65px;
     padding: 15px;
     max-width: 1440px;
-    margin:  0 auto;
+    margin:  0 70px;
+
 }
 
 .cabecalho .logo {
-    width: 65px;
+    width: 50px;
     padding: 10px;
     height: 100%;
     margin: 10px;
@@ -24,16 +25,15 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1px;
-    margin: 40px;
     font-weight: bold;
-    font-size: 20px;
-    width: 200px;
+    font-size: 15px;
+    width: 150px;
     height: 100%;
 }
 
 .cabecalho nav .menu :hover{
     background: rgb(172, 9, 9);
-    border-radius: 15px;
+    border-radius: 13px;
     padding: 7px;
     transition: 0.2s;
 }
@@ -43,40 +43,40 @@ header {
 }  
 
 main {
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Poppins';
     padding: 20px 0;
 }
 
 .container {
     max-width: 1440px;
-    margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    margin: 0 70px;
     height: calc( 100vh - 65px); 
 }
 
 .container .titulo-vingadores {
-    max-width: 550px;  
+    max-width: 450px;  
 }
 
 .container .vingadores-unidos{
-    width: 450px;
+    width: 350px;
 }
 
 .container .sinopse {
-    max-width: 750px;
+    max-width: 650px;
     color: white;
+    text-align: justify;
 }
 
 .container .botao-trailer{
     background-color: rgb(172, 9, 9);
     border: none;
-    border-radius: 15px;
-    padding: 15px;
-    font-size: 15px;
+    border-radius: 13px;
+    padding: 13px;
+    font-size: 13px;
     margin: 15px 0;
     color: white;
     font-weight: bold;
@@ -90,15 +90,16 @@ main {
     }
 
 .fundo-video{
-        position: absolute;
-        z-index: -1;
-        height: 100vh;
-       width: 100vw;
-       overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     }
 
 .fundo-video .video {
-    width: 100vw; 
+    height: 100vh; 
 }
 
 .fundo-video::after {
@@ -142,8 +143,8 @@ main {
 
 .modal iframe {
     border-width: 0;
-    width: 640px;
-    height: 360px;
+    width: 480px;
+    height: 270px;
 }
 
 .modal.aberto {
