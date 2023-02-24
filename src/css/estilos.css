@@ -96,6 +96,7 @@ main {
     overflow: hidden;
     display: flex;
     justify-content: center;
+    background-color: black;
     }
 
 .fundo-video .video {
@@ -109,7 +110,7 @@ main {
     width: 100vw;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7651435574229692) 50%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.7651435574229692) 50%, rgba(0,0,0,1) 95%);
 }
 
 .modal {
